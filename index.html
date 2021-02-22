@@ -10,7 +10,7 @@
 <body>
   <section class="relative w-screen min-h-screen px-20 flex justify-between items-center bg-white">
     <!-- circlw -->
-    <div class="absolute top-0 left-0 w-full h-full bg-green-300" style="clip-path: circle(600px at right 800px);"></div>
+    <div class="circle absolute top-0 left-0 w-full h-full bg-green-300" style="clip-path: circle(600px at right 800px);"></div>
     <header class="absolute top-0 left-0 w-screen px-5 py-6 flex justify-between items-center ">
       <a href="" class="">
         <img src="./dist/images/logo.png" class="relative max-w-42" alt="">
@@ -31,18 +31,18 @@
       </div>
       <!-- image box -->
       <div class="w-mans flex justify-end items-end pr-12 mt-12  ">
-        <img src="./dist/images/img1.png" class="max-w-80"  alt="">
+        <img src="./dist/images/img1.png" class="starbucks max-w-80"  alt="">
       </div>
     </div>
     <ul class="absolute flex bottom-5 left-1/2">
       <li class="inline-block mx-6 cursor-pointer transition duration-500 transform translate-x-4 translate-y-4" >
-        <img class="max-w-16" src="./dist/images/thumb1.png" alt="">
+        <img class="max-w-16" src="./dist/images/thumb1.png" alt="" onclick="imgSlider('./dist/images/img1.png');changeCircleColor('#017143')">
       </li>
-      <li class="inline-block mx-6 cursor-pointer transition duration-500" >
-        <img class="max-w-16" src="./dist/images/thumb2.png" alt="">
+      <li class="inline-block mx-6 cursor-pointer transition duration-500 transform translate-x-4 translate-y-4" >
+        <img class="max-w-16" src="./dist/images/thumb2.png" alt="" onclick="imgSlider('./dist/images/img2.png');changeCircleColor('#eb7495')">
       </li>
-      <li class="inline-block mx-6 cursor-pointer transition duration-500" >
-        <img class="max-w-16" src="./dist/images/thumb3.png" alt="">
+      <li class="inline-block mx-6 cursor-pointer transition duration-500 transform translate-x-4 translate-y-4" >
+        <img class="max-w-16" src="./dist/images/thumb3.png" alt="" onclick="imgSlider('./dist/images/img3.png');changeCircleColor('#d752b1')">
       </li>
     </ul>
     <ul class="absolute top-1/2 right-16 flex justify-center items-center flex-col">
@@ -51,5 +51,17 @@
       <li><img class="my-3" src="./dist/images/twitter.png" alt=""></li>
     </ul>
   </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.starbucks').src = anything
+    }
+
+    function changeCircleColor(color) {
+      const circle = document.querySelector('circle');
+      circle.style.background = color
+    }
+
+  </script>
 </body>
 </html>
