@@ -8,6 +8,48 @@
   <title>Star Landing Page</title>
 </head>
 <body>
-  Lets start
+  <section class="relative w-screen min-h-screen px-20 flex justify-between items-center bg-white">
+    <!-- circlw -->
+    <div class="absolute top-0 left-0 w-full h-full bg-green-300" style="clip-path: circle(600px at right 800px);"></div>
+    <header class="absolute top-0 left-0 w-screen px-5 py-6 flex justify-between items-center ">
+      <a href="" class="">
+        <img src="./dist/images/logo.png" class="relative max-w-42" alt="">
+      </a>
+      <ul class="relative flex ">
+        <li class=""><a class="inline-block text-gray-500 font-normal ml-6" href="#">Home</a></li>
+        <li class=""><a class="inline-block text-gray-500 font-normal ml-6" href="#">Menu</a> </li>
+        <li class=""><a class="inline-block text-gray-500 font-normal ml-6" href="#">Whats New</a> </li>
+        <li class=""><a class="inline-block text-gray-500 font-normal ml-6" href="#">Contact</a> </li>
+      </ul>
+    </header>
+    <!-- Content -->
+    <div class="relative w-screen px-20 flex justify-between items-center">
+      <div class="relative w-mans">
+        <h2 class="text-gray-700 text-7xl">It's not just coffee <br>It' <span class="text-green-800 font-extrabold">Starbucks</span></h2>
+        <p class="mt-6 inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores libero exercitationem similique minus hic natus alias possimus, laboriosam blanditiis, molestias expedita voluptatum rerum sequi doloremque deserunt quod, rem omnis labore.</p>
+        <a href="#" class="inline-block rounded-full py-3 mt-6 px-6 bg-green-600">Learn More</a>
+      </div>
+      <!-- image box -->
+      <div class="w-mans flex justify-end items-end pr-12 mt-12  ">
+        <img src="./dist/images/img1.png" class="max-w-80"  alt="">
+      </div>
+    </div>
+    <ul class="absolute flex bottom-5 left-1/2">
+      <li class="inline-block mx-6 cursor-pointer transition duration-500 transform translate-x-4 translate-y-4" >
+        <img class="max-w-16" src="./dist/images/thumb1.png" alt="">
+      </li>
+      <li class="inline-block mx-6 cursor-pointer transition duration-500" >
+        <img class="max-w-16" src="./dist/images/thumb2.png" alt="">
+      </li>
+      <li class="inline-block mx-6 cursor-pointer transition duration-500" >
+        <img class="max-w-16" src="./dist/images/thumb3.png" alt="">
+      </li>
+    </ul>
+    <ul class="absolute top-1/2 right-16 flex justify-center items-center flex-col">
+      <li><img class="my-3" src="./dist/images/facebook.png" alt=""></li>
+      <li><img class="my-3" src="./dist/images/instagram.png" alt=""></li>
+      <li><img class="my-3" src="./dist/images/twitter.png" alt=""></li>
+    </ul>
+  </section>
 </body>
 </html>
