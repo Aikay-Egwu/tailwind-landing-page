@@ -1,0 +1,25 @@
+{
+  "name": "tailwind-landing-page",
+  "version": "1.0.0",
+  "description": "Building a cool landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "windbuild": "tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aikay-Egwu/tailwind-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aikay-Egwu/tailwind-landing-page/issues"
+  },
+  "homepage": "https://github.com/Aikay-Egwu/tailwind-landing-page#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "tailwindcss": "^2.0.3"
+  }
+}
